@@ -32,7 +32,7 @@ bbs_token=R74mq3S2uXXXXXXXXXXX66nLnTW7DFOV;
 
 ![https://cdn.jsdelivr.net/gh/Xramas/Repository@master/files/2023/1/30/31691c9e56554d2e11e7539aa5531015.png](https://cdn.jsdelivr.net/gh/Xramas/Repository@master/files/2023/1/30/31691c9e56554d2e11e7539aa5531015.png)
 
-Renew:2024//19
+Renew:2024/8/19
 
 Based on [HiFiNi-Auto-Sign](https://github.com/Xramas/HiFiNi-Auto-Sign)
 
