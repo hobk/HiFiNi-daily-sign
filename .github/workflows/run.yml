@@ -1,0 +1,25 @@
+name: HiFiNi 自动签到
+ 
+on:
+    push:
+        branches:
+            - master
+    schedule:
+        - cron: '30 18 * * *'
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout codes
+              uses: actions/checkout@v3
+            - name: Set go
+              uses: actions/setup-go@v3
+              with:
+                go-version: '^1.14'
+            - name: HIFINI 自动签到
+              env:
+                COOKIE: ${{ secrets.COOKIE }}
+                SIGN_KEY: ${{ secrets.SIGN_KEY }}
+                DINGDING_WEBHOOK: ${{ secrets.DINGDING_WEBHOOK }}
+              run: go run main.go
